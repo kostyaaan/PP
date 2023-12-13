@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--Created @ 13.12.2023 15:45:01-->
+<DvdList>
+   <DVD ID="1" Category="Science Fiction">
+      <Title>The Matrix</Title>
+      <Director>Larry Wachowski</Director>
+      <Price>18,74</Price>
+      <Starring>
+         <Star>Keanu Reeves</Star>
+         <Star>Laurence Fishburne</Star>
+      </Starring>
+   </DVD>
+   <DVD ID="2" Category="Drama">
+      <Title>Forrest Gump</Title>
+      <Director>Robert Zemeckis</Director>
+      <Price>23,99</Price>
+      <Starring>
+         <Star>Tom Hanks</Star>
+         <Star>Robin Wright</Star>
+      </Starring>
+   </DVD>
+</DvdList>

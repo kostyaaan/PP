@@ -1,0 +1,40 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:local="clr-namespace:WpfApp1">
+
+    <local:XmlConverter x:Key="xmlConverter"/>
+
+    <!--Шаблон иерархического отображения данных  XML-файла -->
+    <HierarchicalDataTemplate x:Key="key2">
+        <!--Указываю источник данных, на основании которого должно формироваться дерево разделов-->
+        <HierarchicalDataTemplate.ItemsSource>
+            <Binding Path=".">
+                <!--Указываю конвертер, который позволяет получить список дочерних элементов типа Category, по отношению к данному-->
+                <Binding.Converter>
+                    <local:XmlConverter/>
+                </Binding.Converter>
+            </Binding>
+        </HierarchicalDataTemplate.ItemsSource>
+        <!--Формирую визуальное представление элемента, отображаемого в дереве разделов-->
+        <TextBlock Text="{Binding Path=Attribute[CategoryName].Value}">
+            <TextBlock.ToolTip>
+                <Binding Path="Attribute[ToolTipText].Value"/>
+            </TextBlock.ToolTip>
+        </TextBlock>
+    </HierarchicalDataTemplate>
+
+    <!--Шаблон отображения экземпляров класса Book XML-файла -->
+    <DataTemplate x:Key="key3" >
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <TextBlock Text="{Binding Path=Attribute[BookName].Value}">
+                <TextBlock.ToolTip>
+                    <Binding Path="Attribute[ToolTipText].Value"/>
+                </TextBlock.ToolTip>
+            </TextBlock>
+        </Grid>
+    </DataTemplate>
+</ResourceDictionary>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<MyCatalog>
+<Category CategoryName="Литература по информационным технологиям" Description ="Различная литература по компьютерной тематике"  ToolTipText="Для профессионалов">
+<Category CategoryName="Windows-приложения"
+Description ="Данная ОС наиболее популярна" ToolTipText="Для пользователей">
+<Category CategoryName="MS Office 2010"
+Description ="Офисный пакет программ" ToolTipText="Для офиса"/>
+<Category CategoryName="Продукция компании Microsoft"
+Description ="Различные софты" ToolTipText="Другого выбора нет">
+<Category CategoryName="СУБД"
+Description ="Самые распространённые СУБД" ToolTipText="Широко распространены">
+<Book BookName ="Microsoft Access"
+Description ="СУБД для локальных ИС" ToolTipText="Desktop"/>
+<Book BookName ="Visual FoxPro"
+Description ="Промышленный файл-сервер" ToolTipText="Пока используется"/>
+<Book BookName ="Microsoft SQL Server"
+Description ="SQL-сервер" ToolTipText="Используется в 1С"/>
+</Category>
+<Category CategoryName="Visual Studio.NET"
+Description ="" ToolTipText="Структура платформы .NET"/>
+</Category>
+</Category>
+<Category CategoryName="Linux-приложения"
+Description ="Свободно распространяемая ОС" ToolTipText="В Internet"/>
+</Category>
+<Category CategoryName="Классика"
+Description ="Классическая литература" ToolTipText="Полезно читать но ночь">
+<Category CategoryName="Повести и рассказы"
+Description ="Стихи отечественных авторов" ToolTipText="Пелевин - хороший автор">
+<Book BookName ="Капитанская дочка. А.С. Пушкин"
+Description ="Школьный курс" ToolTipText="Теперь не входит в программу"/>
+</Category>
+<Category CategoryName="Фантастика"
+Description ="Повести и рассказы отечественных авторов" ToolTipText="Это тоже фантастика"/>
+</Category>
+
+</MyCatalog>

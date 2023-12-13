@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Created: 13.12.2023 15:46:02-->
+<DvdList xmlns="http://www.somecompany.com/DVDList">
+  <DVD ID="1" Category="Science Fiction">
+    <Title>The Matrix</Title>
+    <Director>Larry Wachowski</Director>
+    <Price>18.74</Price>
+    <Starring>
+      <Star>Keanu Reeves</Star>
+      <Star>Laurence Fishburne</Star>
+    </Starring>
+  </DVD>
+</DvdList>
